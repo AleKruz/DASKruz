@@ -11,6 +11,7 @@ namespace Test1
         static void Main(string[] args)
         {
             System.Console.WriteLine("Hello World");
+            System.Console.WriteLine("Goodbye");
             System.Console.ReadKey();
         }
     }
