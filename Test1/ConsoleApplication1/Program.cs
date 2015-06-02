@@ -10,6 +10,21 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            BasedeDatos.Numeros db = new BasedeDatos.Numeros();
+
+            db.Agregar(1);
+            db.Agregar(999);
+            db.Agregar(57);
+
+            int cantidad = db.ObtenerCantidad();
+
+            Console.WriteLine(cantidad);
+
+
+        }
+
+        private static void CalculoDeList()
+        {
             List<int> entrada = new List<int>();
             entrada.Add(4);
             entrada.Add(6);
@@ -27,7 +42,6 @@ namespace ConsoleApplication1
                 Console.WriteLine(i);
             }
             Console.ReadLine();
-
         }
     }
 }
