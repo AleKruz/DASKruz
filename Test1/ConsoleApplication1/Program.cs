@@ -10,15 +10,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            BasedeDatos.Numeros db = new BasedeDatos.Numeros();
 
-            db.Agregar(1);
-            db.Agregar(999);
-            db.Agregar(57);
-
-            int cantidad = db.ObtenerCantidad();
-
-            Console.WriteLine(cantidad);
 
 
         }
@@ -31,7 +23,7 @@ namespace ConsoleApplication1
             entrada.Add(20);
             entrada.Add(1);
             entrada.Add(11);
-            entrada.Add(25);
+            entrada.Add(600);
 
             Calculadora laCalculadora = new Calculadora();
 
