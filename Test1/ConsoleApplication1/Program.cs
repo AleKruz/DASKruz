@@ -10,6 +10,23 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            List<int> entrada = new List<int>();
+            entrada.Add(4);
+            entrada.Add(6);
+            entrada.Add(20);
+            entrada.Add(1);
+            entrada.Add(11);
+            entrada.Add(25);
+
+            Calculadora laCalculadora = new Calculadora();
+
+            List<int> salida = laCalculadora.CalcularFibonacciDeLista(entrada);
+
+            foreach (int i in salida)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();
 
         }
     }
