@@ -8,14 +8,26 @@ namespace Division
 {
     class CalculadoraBoundary
     {
-        double ObtenerDivisor()
+        public double ObtenerDividendo()
         {
+            Console.WriteLine("Introduzca el dividendo: ");
+            string dividendo = Console.ReadLine();
+            double respuesta = double.Parse(dividendo);
+            return respuesta;
+        }
+
+        public double ObtenerDivisor()
+        {
+            Console.WriteLine("Introduzca el divisor: ");
             string divisor = Console.ReadLine();
             double respuesta = double.Parse(divisor);
             return respuesta;
         }
 
-
-
+        internal void MostrarResultado(string resultado)
+        {
+            Console.WriteLine("El resutado es: "+ resultado);
+            Console.ReadLine();
+        }
     }
 }

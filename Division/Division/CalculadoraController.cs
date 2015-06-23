@@ -8,5 +8,16 @@ namespace Division
 {
     class CalculadoraController
     {
+        public string CoordineLaDivision(double dividendo, double divisor)
+        {
+            CalculadoraEntity ce = new CalculadoraEntity();
+
+            double resultado = ce.Dividir(divisor,dividendo);
+
+            string resultadoString = resultado.ToString();
+
+            return resultadoString;
+        }
+
     }
 }

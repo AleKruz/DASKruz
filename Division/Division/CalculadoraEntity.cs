@@ -8,10 +8,11 @@ namespace Division
 {
     class CalculadoraEntity
     {
-        double Dividir(double dividendo, double divisor)
+        public double Dividir(double dividendo, double divisor)
         {
             if (divisor == 0)
             {
+                
                 throw new Exception("El divisor no debe ser cero");
             }
             return dividendo/divisor;
